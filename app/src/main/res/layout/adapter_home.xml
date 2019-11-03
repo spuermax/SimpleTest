@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_livecourse_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xdp_142"
+    android:layout_marginRight="@dimen/xdp_8"
+    android:layout_marginLeft="@dimen/xdp_8"
+    android:background="@drawable/public_course_bg1">
+
+    <TextView
+        android:id="@+id/tv_liveCourse_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_23"
+        android:layout_marginTop="@dimen/xdp_25"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="14"
+        android:text="初级提分-必考考试大揭秘"
+        android:textColor="@color/color_323C32"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_course_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_23"
+        android:layout_marginTop="@dimen/xdp_5"
+        android:text="08月02日 14:30-15:30"
+        android:textColor="@color/color_898D89"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_liveCourse_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_live"
+        android:layout_width="@dimen/xdp_9"
+        android:layout_height="@dimen/xdp_11"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_course_time"
+        app:layout_constraintLeft_toRightOf="@id/tv_course_time"
+        app:layout_constraintTop_toTopOf="@id/tv_course_time" />
+
+
+    <TextView
+        android:id="@+id/tv_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_5"
+        android:text="直播中"
+        android:textColor="@color/color_0DD280"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/iv_live"
+        app:layout_constraintLeft_toRightOf="@id/iv_live"
+        app:layout_constraintTop_toTopOf="@id/iv_live" />
+
+    <ImageView
+        android:id="@+id/iv_liceCourse_image"
+        android:layout_width="@dimen/xdp_24"
+        android:layout_height="@dimen/xdp_24"
+        android:layout_marginLeft="@dimen/xdp_20"
+        android:layout_marginBottom="@dimen/xdp_26"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_5"
+        android:text="张珂柯"
+        android:maxEms="6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_AAADAA"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/iv_liceCourse_image"
+        app:layout_constraintLeft_toRightOf="@id/iv_liceCourse_image"
+        app:layout_constraintTop_toTopOf="@id/iv_liceCourse_image" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="@dimen/xdp_1"
+        android:layout_height="@dimen/xdp_9"
+        android:layout_marginLeft="@dimen/xdp_7"
+        android:background="@color/color_DEE0DE"
+        app:layout_constraintBottom_toBottomOf="@id/tv_teacher_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_teacher_name"
+        app:layout_constraintTop_toTopOf="@id/tv_teacher_name" />
+
+    <TextView
+        android:id="@+id/tv_liveCourse_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_7"
+        android:text="1314人正在直播间听课"
+        android:textColor="@color/color_AAADAA"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/view_line"
+        app:layout_constraintLeft_toRightOf="@id/view_line"
+        app:layout_constraintTop_toTopOf="@id/view_line" />
+
+
+    <Button
+        android:id="@+id/tv_liveCourse_status"
+        android:layout_width="@dimen/xdp_73"
+        android:layout_height="@dimen/xdp_28"
+        android:layout_marginRight="@dimen/xdp_20"
+        android:layout_marginBottom="@dimen/xdp_26"
+        android:background="@drawable/shape_public_course_tv"
+        android:text="已预约"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/color_0DD280"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_liceCourse_status"
+        android:layout_width="@dimen/xdp_9"
+        android:layout_height="@dimen/xdp_11"
+        android:layout_marginRight="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_liveCourse_status"
+        app:layout_constraintRight_toLeftOf="@id/tv_liveCourse_status"
+        app:layout_constraintTop_toTopOf="@id/tv_liveCourse_status"
+        android:visibility="gone"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
