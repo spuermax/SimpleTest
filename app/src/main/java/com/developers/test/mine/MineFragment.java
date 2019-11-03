@@ -109,16 +109,4 @@ public class MineFragment extends QsFragment {
         return list1;
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            // 此时为横屏
-            // ...
-
-        } else {
-            // 此时为横屏
-            // ...
-        }
-    }
 }
